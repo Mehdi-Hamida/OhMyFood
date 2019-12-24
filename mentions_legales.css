@@ -1,0 +1,71 @@
+body
+{
+    margin: 0
+}
+
+header
+{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #49B282;
+}
+
+img
+{
+    width: 10rem;
+    max-width: 15rem;
+}
+
+#logo
+{
+    text-align: center;
+}
+
+h1
+{
+    margin-top: 5.5rem;
+    text-align: center;
+    font-size: 120%;
+    padding-top: 0.6rem;
+    font-family: sans-serif;
+}
+
+.box
+{
+   text-align: center;
+    font-family: sans-serif;
+    margin-top: 7rem;
+}
+
+#mentions
+{
+    margin-left: -5rem;
+}
+
+#contact
+{
+    margin-right: -6.5rem;
+}
+
+a
+{
+    text-decoration: none;
+    color: yellow
+}
+
+footer
+{
+    height: 3rem;
+    width: 105%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    color: yellow;
+    background-color: #49B282;
+    margin-left: -5%;
+    margin-right: -5%;
+    bottom: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}

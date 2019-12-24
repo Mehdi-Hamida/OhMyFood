@@ -1,0 +1,85 @@
+body
+{
+    margin: 0
+}
+
+header
+{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #49B282;
+}
+
+img
+{
+    width: 10rem;
+    max-width: 15rem;
+}
+
+#logo
+{
+    text-align: center;
+}
+
+h1
+{
+    margin-top: 5.5rem;
+    text-align: center;
+    font-size: 120%;
+    padding-top: 0.6rem;
+    font-family: sans-serif;
+}
+
+/*background-size:contain; permet d'empêcher le zoom du menu lorsque la fenêtre du navigateur est agrandie*/
+.box
+{
+    background-image: url(img/cover1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1.5%;
+}
+
+#mentions
+{
+    margin-left: -5rem;
+}
+
+#contact
+{
+    margin-right: -6.5rem;
+}
+
+#mentions, #contact
+{
+    align-items: center;
+    font-family: sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: yellow
+}
+
+footer
+{
+    height: 3rem;
+    width: 105%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    color: yellow;
+    background-color: #49B282;
+    margin-left: -5%;
+    margin-right: -5%;
+    bottom: 0;
+}
