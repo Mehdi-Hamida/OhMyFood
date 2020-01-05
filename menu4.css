@@ -1,6 +1,6 @@
 body
 {
-    margin: 0
+    margin: 0;
 }
 
 header
@@ -31,10 +31,100 @@ h1
     font-family: sans-serif;
 }
 
+h2
+{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 3.5rem;
+    background: linear-gradient(to left, #d0ffc7, #26631a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3
+{
+    text-align: center;
+    font-size: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+    margin-left: rem;
+}
+
+/*.hr 
+{
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+/* content: ""; est nécessaire pour afficher les pseudo-éléments.
+flex: 1; partage le reste de la largeur disponible*/
+/*.hr::after/*droite*/
+/*{
+    display: inline;
+    text-align: right;
+    float: right;
+    content: "";
+    flex: 1;
+    margin-left: ;
+    margin-right: ;
+    height: 1rem;
+    background-image: url(img/menu4/hr_droite.JPG);
+    background-repeat: no-repeat;
+    /*background-image: linear-gradient(to right, white, green);
+    border-top: 0.15em solid;*/
+}
+
+/*.hr::before/*gauche*/
+/*{
+    float: left;
+    margin-right: ;
+    margin-left: ;
+    flex: 1;
+    content: "";
+    height: 1rem;
+    background-image: url(img/menu4/hr_gauche.jpg);
+    background-repeat: no-repeat;
+    /*border-top: 0.15em solid;
+    content: "";
+    flex: 1;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    border: 0;
+    height: 0.3rem;
+    background-image: linear-gradient(to left, white, green);*/
+}
+
+/*BIEN QU'INUTILE, SI JE L'ENLEVE CA FAIT BUGER LA PRESENTATION DES TITRES*/
+#hr1
+{
+}
+
+#hr2
+{
+}
+
+.titre
+{
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 1.5rem;
+    margin-bottom 0.4rem;
+}
+
 /*background-size:contain; permet d'empêcher le zoom du menu lorsque la fenêtre du navigateur est agrandie*/
 .box
 {
-    background-image: url(img/cover4.png);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    font-family: "apple chancery", "comic sans ms", "trebuchet ms", cursive, sans-serif;
+    /*background-image: url(img/cover1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -45,7 +135,31 @@ h1
     height: 35rem;
     width: 100%;
     margin: auto;
-    margin-bottom: 1.5%;
+    margin-bottom: 1.5%;*/
+}
+
+.box p
+{
+   font-size: 73%; 
+}
+
+.gauche
+{
+    float: left;
+    margin: 0;
+    margin-left: 5%;
+    font-size: small;
+}
+
+.droite
+{
+    margin: 0;
+    margin-left: 90%;
+    text-align: end;
+    margin-right: 5%;
+    font-weight: bold;
+    font-size: small;
+    
 }
 
 #mentions

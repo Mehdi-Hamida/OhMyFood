@@ -24,65 +24,74 @@ img
     margin-right: -5%;
 }
 
+#navbar
+{
+    background-color: #e0e0e0;
+    height: 2.5rem;
+    position: relative;
+}
+
+i
+{
+    position: absolute;
+    top: 15%;
+    left: 0.3em;
+    color: darkgrey;
+    font-size: 170%;
+    min-width: 1%;
+}
+
 .box
 {
-    margin-top: 2.5rem;
+    margin-top: 9.2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center
+    NE MARCHE PLUS !!*/
+    justify-content: space-around;
+    width: 24%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #menu1, #menu2, #menu3, #menu4
 {
-    margin-top: 3.7rem;
-    width: 11rem;
-    height: 12rem;
+    display: flex;
+    width: 10rem;
+    height: 11rem;
     padding: 2rem 0;
-    background-color: aqua;
-    box-shadow: 2px 2px 5px #aaa;
-}
-
-#menu1, #menu3
-{
-    margin-right: 2rem;
-}
-
-#menu1, #menu2
-{
-    margin-bottom: -1rem;
+    box-shadow: 0px 0px 6px lightgrey;
+    background-size: 100%;
+    background-position: center;
 }
 
 #menu1
 {
     background-image: url(img/menu1.png);
-    background-size: 100%;
-    background-position: center;
+    margin-bottom: 1.7rem;
 }
 
 #menu2
 {
     background-image: url(img/menu2.png);
-    background-size: 100%;
-    background-position: center;
+    margin-bottom: 1.7rem;
 }
 
 #menu3
 {
     background-image: url(img/menu3.png);
-    background-size: 100%;
-    background-position: center;
+    margin-bottom: 1.7rem;
 }
 
 #menu4
 {
     background-image: url(img/menu4.png);
-    background-size: 100%;
-    background-position: center;
+    margin-bottom: 1.7rem;
 }
 
 #bouton
 {
-    display: flex;
+    /*position: static;*/
     align-items: center;
     background-color: #49B282;
     color: yellow;
@@ -90,12 +99,24 @@ img
     display: flex;
     justify-content: center;
     width: 13rem;
+    min-width: 10rem;
     height: 2rem;
-    margin: auto;
-    margin-top: 1.5rem;
     font-size: 1.2rem;
     font-family: sans-serif;
     font-size: medium;
+}
+
+h1
+{
+    font-size: medium;
+    font-weight: normal;
+}
+
+h2
+{
+    font-size: medium;
+    font-weight: normal;
+    font-family: sans-serif;
 }
 
 #mentions
@@ -134,51 +155,72 @@ footer
     bottom: 0;
 }
 
-/*DEBUT PARTIE ANIMATIONS*/
-
+/* /!\ DEBUT PARTIE ANIMATIONS /!\ */
+/*ANIMATION ZOOM MENU + OPACITE REDUITE*/
 :hover#menu1, :hover#menu2, :hover#menu3, :hover#menu4
 {
     background-size: 130%;
     opacity: .7;
     transition: .3s;
 }
+/*FIN ANIMATION DES MENUS*/
+/*DEBUT ANIMATION DES 3 PETITS POINTS*/
 
-span
+#bouton .wave span
 {
+    /*width: 0.4rem;
+    height: 0.4rem;*/
+    border-radius: 50%;
     display: inline-block;
-}
-
-:hover#bouton #point1 #point2 #point3
-{
-    font-size: 120%;
-}
-
-:hover#bouton #point1
-{
-    /*font-size: 120%;*/
-    transform-origin: 50% 50%;
-    transform: translateY(-8px);
+    animation-name: jumpingDots;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    transition-duration: 2s;
-    animation-direction: alternate;
+    animation-timing-function: linear;
+    font-size: x-large;
+    margin: -8%;
 }
 
-:hover#bouton #point2
+.wave span:nth-child(2)
 {
-    /*font-size: 120%;*/
-    animation-delay: 500ms;
-    animation-iteration-count: infinite;
-    transition-duration: 2s;
-    animation-direction: alternate;
+    animation-delay: 0.7s;
 }
 
-:hover#bouton #point3
+.wave span:nth-child(3)
 {
-    /*display: contents;*/
-    /*font-size: 120%;*/
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    transition-duration: 2s;
-    animation-direction: alternate;
+    animation-delay: 1.4s;
 }
+
+@keyframes jumpingDots
+{
+    0%{transform: translateY(-10%);}
+    40%{transform: translateY(-10%);}
+    50%{transform: translateY(-20%);}
+    100%{transform: translateY(-10%);}
+    
+}
+
+/*FIN ANIMATION DES 3 PETITS POINTS*/
+/*DEBUT ANIMATIONS WIGGLE*/
+
+@keyframes wiggle
+{
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(0deg); }
+    15% { transform: rotate(13deg); }
+    20% { transform: rotate(-13deg); }
+    25% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+h2.wiggle:hover 
+{
+  display: inline-block;
+  animation: wiggle 3s infinite;
+}
+
+h2.wiggle 
+{
+  animation: none;
+}
+/*FIN ANIMATIONS WIGGLE*/
 /*FIN PARTIE ANIMATIONS*/
