@@ -42,9 +42,86 @@ h3
     text-align: center;
     font-size: 100%;
     margin-top: 1.5rem;
-    margin-bottom: 0.4rem
+    margin-bottom: 0.4rem;
+    position: relative;
+}
+/*SOULIGNER 1ER TITRE*/
+p .trait1
+{
+    margin-left: -3.5rem;
 }
 
+h3 .trait1
+{
+    position: absolute;
+    top: 1.3rem;
+    border-bottom: 2px ridge black;
+    animation-name: soulignement1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soulignement1
+{
+    0% {width: 0rem;}
+    100% {width: 3.5rem;}
+}
+/*SOULIGNER 2EME TITRE*/
+p .trait2
+{
+    margin-left: -6.4rem;
+}
+
+h3 .trait2
+{
+    position: absolute;
+    /*left: 82.6vh;*/
+    top: 1.3rem;
+    /*text-align: center;*/
+    border-bottom: 2px ridge black;
+    animation-name: soulignement2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soulignement2
+{
+    0% {width: 0rem;}
+    100% {width: 6.5rem;}
+}
+/*SOULIGNER 3EME TITRE*/
+p .trait3
+{
+    margin-left: -7.9rem;
+}
+
+h3 .trait3
+{
+    position: absolute;
+    top: 1.3rem;
+    /*animation: none;*/
+}
+
+@keyframes soulignement3
+{
+    0% {width: 0rem;}
+    100% {width: 8rem;}
+}
+
+h3:hover/*L4ANIMATION MARCHE SI ON ENLEVE HOVER MAIS HOVER FAIT TOUT BUGER*/
+{
+    margin: auto;
+    border-bottom: 2px ridge black;
+    animation: running;
+    animation-name: soulignement3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*FIN DES SOULIGNEMENTS*/
 .hr 
 {
     align-items: center;
