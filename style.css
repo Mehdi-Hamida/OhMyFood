@@ -322,7 +322,7 @@ h2.wiggle
 }
 
 /*POUR MOBILES*/
-@media (min-device-width: 350px) and (max-device-width: 750px)
+@media (min-width: 350px) and (max-width: 750px)
 {
     .box
     {
