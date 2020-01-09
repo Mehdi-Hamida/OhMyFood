@@ -43,21 +43,35 @@ h3
     font-size: 100%;
     margin-top: 1.5rem;
     margin-bottom: 0.4rem;
-    position: relative;
+    /*position: relative;*/
 }
 /*SOULIGNER 1ER TITRE*/
-p .trait1
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
 {
-    margin-left: -3.5rem;
+    display: flex;
 }
 
-h3 .trait1
+.trait1
 {
-    position: absolute;
-    top: 1.3rem;
-    border-bottom: 2px ridge black;
-    animation-name: soulignement1;
-    animation-duration: 2s;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre1
+{
+    width: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5rem;
+}
+
+.titres:hover + .cadre1 .trait1
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement1 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -67,41 +81,83 @@ h3 .trait1
     0% {width: 0rem;}
     100% {width: 3.5rem;}
 }
-/*SOULIGNER 2EME TITRE*/
-p .trait2
+
+@-webkit-keyframes soulignement1
 {
-    margin-left: -6.4rem;
+    0% {width: 0rem;}
+    100% {width: 3.5rem;}
+}
+/*SOULIGNER 2EME TITRE*/
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
+{
+    display: flex;
 }
 
-h3 .trait2
+.trait2
 {
-    position: absolute;
-    /*left: 82.6vh;*/
-    top: 1.3rem;
-    /*text-align: center;*/
-    border-bottom: 2px ridge black;
-    animation-name: soulignement2;
-    animation-duration: 2s;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre2
+{
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5rem;
+}
+
+.titres:hover + .cadre2 .trait2
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement2 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 @keyframes soulignement2
 {
-    0% {width: 0rem;}
+    0% {width: 1rem;}
+    100% {width: 6.5rem;}
+}
+
+@-webkit-keyframes soulignement2
+{
+    0% {width: 1rem;}
     100% {width: 6.5rem;}
 }
 /*SOULIGNER 3EME TITRE*/
-p .trait3
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
 {
-    margin-left: -7.9rem;
+    display: flex;
 }
 
-h3 .trait3
+.trait3
 {
-    position: absolute;
-    top: 1.3rem;
-    /*animation: none;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre3
+{
+    width: 127px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.5rem;
+}
+
+.titres:hover + .cadre3 .trait3
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement3 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes soulignement3
@@ -110,19 +166,14 @@ h3 .trait3
     100% {width: 8rem;}
 }
 
-h3:hover/*L4ANIMATION MARCHE SI ON ENLEVE HOVER MAIS HOVER FAIT TOUT BUGER*/
+@-webkit-keyframes soulignement3
 {
-    margin: auto;
-    border-bottom: 2px ridge black;
-    animation: running;
-    animation-name: soulignement3;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    0% {width: 0rem;}
+    100% {width: 8rem;}
 }
 
 /*FIN DES SOULIGNEMENTS*/
-.hr 
+.titres
 {
     align-items: center;
     display: flex;
@@ -131,14 +182,15 @@ h3:hover/*L4ANIMATION MARCHE SI ON ENLEVE HOVER MAIS HOVER FAIT TOUT BUGER*/
 
 /* content: ""; est nécessaire pour afficher les pseudo-éléments.
 flex: 1; partage le reste de la largeur disponible*/
-.hr::before,
-.hr::after 
+.titres::before,
+.titres::after
 {
     border-top: 0.15em solid;
     content: "";
     flex: 1;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-top: 0.7rem;
 }
 
 /*background-size:contain; permet d'empêcher le zoom du menu lorsque la fenêtre du navigateur est agrandie*/
