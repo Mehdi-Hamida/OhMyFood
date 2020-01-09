@@ -64,7 +64,7 @@ h3
     width: 58px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.5rem;
+    margin-top: -1.2rem;
 }
 
 .titres:hover + .cadre1 .trait1
@@ -106,7 +106,7 @@ h3
     width: 105px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.5rem;
+    margin-top: -1.2rem;
 }
 
 .titres:hover + .cadre2 .trait2
@@ -148,7 +148,7 @@ h3
     width: 127px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.5rem;
+    margin-top: -1.2rem;
 }
 
 .titres:hover + .cadre3 .trait3
