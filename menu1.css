@@ -22,6 +22,25 @@ img
     text-align: center;
 }
 
+#image
+{
+    width: 10rem;
+    margin-top: rem;
+    margin-bottom: -1rem;
+}
+
+#image2
+{
+    width: 10rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+#container
+{
+    text-align: center;
+}
+
 h1
 {
     margin-top: 5.5rem;
@@ -34,16 +53,17 @@ h1
 h2
 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: -1rem;
+    font-size: large;
 }
 
 h3
 {
     text-align: center;
-    font-size: 100%;
+    font-size: 110%;
     margin-top: 1.5rem;
-    margin-bottom: 0.4rem;
-    /*position: relative;*/
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 /*SOULIGNER 1ER TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
@@ -64,7 +84,7 @@ h3
     width: 58px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.2rem;
+    margin-top: -1.4rem;
 }
 
 .titres:hover + .cadre1 .trait1
@@ -106,7 +126,7 @@ h3
     width: 105px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.2rem;
+    margin-top: -1.4rem;
 }
 
 .titres:hover + .cadre2 .trait2
@@ -148,7 +168,7 @@ h3
     width: 127px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.2rem;
+    margin-top: -1.4rem;
 }
 
 .titres:hover + .cadre3 .trait3
@@ -185,60 +205,62 @@ flex: 1; partage le reste de la largeur disponible*/
 .titres::before,
 .titres::after
 {
-    border-top: 0.15em solid;
+    border-top: 0.18em solid;
     content: "";
     flex: 1;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    margin-top: 0.7rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
 }
 
-/*background-size:contain; permet d'empêcher le zoom du menu lorsque la fenêtre du navigateur est agrandie*/
 .box
 {
-    background-color: #FFD0C5;
+    background-color: #ffe0d9;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2.5%;
+    padding-bottom: %;
     padding-top: 2.5%;
     font-family: "apple chancery", "comic sans ms", "trebuchet ms", cursive, sans-serif;
-    /*background-image: url(img/cover1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 35rem;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 1.5%;*/
+}
+
+#titre1
+{
+    margin-top: 3rem;
 }
 
 .box p
 {
-   font-size: 73%; 
+    margin-bottom: 0.5rem;
 }
 
 .gauche
 {
     float: left;
     margin: 0;
-    margin-left: 5%;
-    font-size: small;
+    margin-left: 10%;
+    font-size: 75%;
 }
 
 .droite
 {
     margin: 0;
-    margin-left: 90%;
-    text-align: end;
-    margin-right: 5%;
+    text-align: right;
+    margin-right: 10%;
     font-weight: bold;
-    font-size: small;
-    
+    font-size: 83%;
+}
+
+.droite2
+{
+    margin-right: 0%;
+    margin-top: 0rem;
+}
+
+/*i
+{
+    background: linear-gradient(to left, #fa836b, #ff2a00);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 #fontawesome
@@ -255,7 +277,8 @@ flex: 1; partage le reste de la largeur disponible*/
     font-size: 110%;
     margin-top: 1rem;
     margin-bottom: -1.5rem;
-}
+    font-weight: bold;
+}*/
 
 #mentions
 {

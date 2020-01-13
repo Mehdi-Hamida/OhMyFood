@@ -35,18 +35,160 @@ h2
 {
     text-align: center;
     margin-bottom: 3.5rem;
-    color: royalblue
+    background: linear-gradient(to left, #78dfff, #0800ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#container
+{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 3.1rem;
+    background-image: url(img/menu3/titre2_menu3.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18rem;
 }
 
 h3
 {
     text-align: center;
-    font-size: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 0.4rem
+    font-size: 110%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+/*SOULIGNER 1ER TITRE*/
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
+{
+    display: flex;
 }
 
-.hr 
+.trait1
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre1
+{
+    width: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.4rem;
+}
+
+.titres:hover + .cadre1 .trait1
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement1 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soulignement1
+{
+    0% {width: 0rem;}
+    100% {width: 3.5rem;}
+}
+
+@-webkit-keyframes soulignement1
+{
+    0% {width: 0rem;}
+    100% {width: 3.5rem;}
+}
+/*SOULIGNER 2EME TITRE*/
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
+{
+    display: flex;
+}
+
+.trait2
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre2
+{
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.4rem;
+}
+
+.titres:hover + .cadre2 .trait2
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement2 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soulignement2
+{
+    0% {width: 1rem;}
+    100% {width: 6.5rem;}
+}
+
+@-webkit-keyframes soulignement2
+{
+    0% {width: 1rem;}
+    100% {width: 6.5rem;}
+}
+/*SOULIGNER 3EME TITRE*/
+/*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
+.titres
+{
+    display: flex;
+}
+
+.trait3
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.cadre3
+{
+    width: 127px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.4rem;
+}
+
+.titres:hover + .cadre3 .trait3
+{
+    animation: running;
+    border-bottom: 2px solid black;
+    animation: soulignement3 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes soulignement3
+{
+    0% {width: 0rem;}
+    100% {width: 8rem;}
+}
+
+@-webkit-keyframes soulignement3
+{
+    0% {width: 0rem;}
+    100% {width: 8rem;}
+}
+
+/*FIN DES SOULIGNEMENTS*/
+.titres
 {
     align-items: center;
     display: flex;
@@ -55,17 +197,32 @@ h3
 
 /* content: ""; est nécessaire pour afficher les pseudo-éléments.
 flex: 1; partage le reste de la largeur disponible*/
-.hr::before,
-.hr::after 
+.titres::before,
+.titres::after
 {
     border-top: 0.15em solid;
     content: "";
     flex: 1;
     margin-left: 1.5em;
     margin-right: 1.5em;
+    margin-top: 0.3rem;
 }
 
-/*background-size:contain; permet d'empêcher le zoom du menu lorsque la fenêtre du navigateur est agrandie*/
+#titre1::before, #titre1::after
+{
+    color: #0033ff;
+}
+
+#titre2::before, #titre2::after
+{
+    color: #0080ff;
+}
+
+#titre3::before, #titre3::after
+{
+    color: #00aeff;
+}
+
 .box
 {
     background-color: #ebebeb;
@@ -74,32 +231,29 @@ flex: 1; partage le reste de la largeur disponible*/
     margin-right: auto;
     padding-bottom: 2.5%;
     padding-top: 2.5%;
-    font-family: "apple chancery", "comic sans ms", "trebuchet ms", cursive, sans-serif;
-    /*background-image: url(img/cover1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 35rem;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 1.5%;*/
+    font-family: 'Caveat', cursive, sans-serif;
+    font-weight: normal;
+}
+
+.box h3
+{
+    margin-bottom: 1rem;
+    font-family: 'Caveat', cursive;
+    font-weight: normal;
 }
 
 .box p
 {
-   font-size: 73%; 
+    font-size: 95%;
+    margin-bottom: 0.5rem;
 }
 
 .gauche
 {
     float: left;
     margin: 0;
-    margin-left: 5%;
-    font-size: small;
+    margin-left: 10%;
+    font-size: 70%;
 }
 
 .droite
@@ -107,10 +261,14 @@ flex: 1; partage le reste de la largeur disponible*/
     margin: 0;
     margin-left: 90%;
     text-align: end;
-    margin-right: 5%;
+    margin-right: 10%;
+    font-size: 75%;
     font-weight: bold;
-    font-size: small;
-    
+}
+
+#dernier
+{
+    margin-bottom: 1.7rem;
 }
 
 #mentions
