@@ -31,15 +31,6 @@ h1
     font-family: sans-serif;
 }
 
-h2
-{
-    text-align: center;
-    margin-bottom: 3.5rem;
-    background: linear-gradient(to left, #78dfff, #0800ff);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 #container
 {
     text-align: center;
@@ -76,10 +67,10 @@ h3
 
 .cadre1
 {
-    width: 58px;
+    width: 123px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.4rem;
+    margin-top: -1.78rem;
 }
 
 .titres:hover + .cadre1 .trait1
@@ -94,13 +85,13 @@ h3
 @keyframes soulignement1
 {
     0% {width: 0rem;}
-    100% {width: 3.5rem;}
+    100% {width: 7.7rem;}
 }
 
 @-webkit-keyframes soulignement1
 {
     0% {width: 0rem;}
-    100% {width: 3.5rem;}
+    100% {width: 7.7rem;}
 }
 /*SOULIGNER 2EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
@@ -118,10 +109,10 @@ h3
 
 .cadre2
 {
-    width: 105px;
+    width: 113px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.4rem;
+    margin-top: -1.78rem;
 }
 
 .titres:hover + .cadre2 .trait2
@@ -136,13 +127,13 @@ h3
 @keyframes soulignement2
 {
     0% {width: 1rem;}
-    100% {width: 6.5rem;}
+    100% {width: 7.2rem;}
 }
 
 @-webkit-keyframes soulignement2
 {
     0% {width: 1rem;}
-    100% {width: 6.5rem;}
+    100% {width: 7.2rem;}
 }
 /*SOULIGNER 3EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
@@ -160,10 +151,10 @@ h3
 
 .cadre3
 {
-    width: 127px;
+    width: 110px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -1.4rem;
+    margin-top: -1.78rem;
 }
 
 .titres:hover + .cadre3 .trait3
@@ -178,13 +169,13 @@ h3
 @keyframes soulignement3
 {
     0% {width: 0rem;}
-    100% {width: 8rem;}
+    100% {width: 6.9rem;}
 }
 
 @-webkit-keyframes soulignement3
 {
     0% {width: 0rem;}
-    100% {width: 8rem;}
+    100% {width: 6.9rem;}
 }
 
 /*FIN DES SOULIGNEMENTS*/
@@ -225,7 +216,7 @@ flex: 1; partage le reste de la largeur disponible*/
 
 .box
 {
-    background-color: #ebebeb;
+    background-color: #ededed;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -271,26 +262,17 @@ flex: 1; partage le reste de la largeur disponible*/
     margin-bottom: 1.7rem;
 }
 
-#mentions
-{
-    margin-left: -5rem;
-}
-
-#contact
-{
-    margin-right: -6.5rem;
-}
-
-#mentions, #contact
-{
-    align-items: center;
-    font-family: sans-serif;
-}
-
 a
 {
     text-decoration: none;
     color: yellow
+}
+
+h2
+{
+    font-size: medium;
+    font-weight: normal;
+    font-family: sans-serif;
 }
 
 footer
@@ -306,3 +288,38 @@ footer
     margin-right: -5%;
     bottom: 0;
 }
+
+/*DEBUT ANIMATIONS WIGGLE*/
+
+@keyframes wiggle
+{
+    /*0% { transform: rotate(0deg); }
+    10% { transform: rotate(0deg); }
+    15% { transform: rotate(13deg); }
+    20% { transform: rotate(-13deg); }
+    25% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }*/
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+h2.wiggle:hover 
+{
+  display: inline-block;
+  animation: wiggle 0.5s infinite;
+}
+
+h2.wiggle 
+{
+  animation: none;
+}
+/*FIN ANIMATIONS WIGGLE*/

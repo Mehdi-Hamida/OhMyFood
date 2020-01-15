@@ -50,13 +50,6 @@ h1
     font-family: sans-serif;
 }
 
-h2
-{
-    text-align: center;
-    margin-bottom: -1rem;
-    font-size: large;
-}
-
 h3
 {
     text-align: center;
@@ -280,26 +273,17 @@ flex: 1; partage le reste de la largeur disponible*/
     font-weight: bold;
 }*/
 
-#mentions
-{
-    margin-left: -5rem;
-}
-
-#contact
-{
-    margin-right: -6.5rem;
-}
-
-#mentions, #contact
-{
-    align-items: center;
-    font-family: sans-serif;
-}
-
 a
 {
     text-decoration: none;
     color: yellow
+}
+
+h2
+{
+    font-size: medium;
+    font-weight: normal;
+    font-family: sans-serif;
 }
 
 footer
@@ -315,3 +299,38 @@ footer
     margin-right: -5%;
     bottom: 0;
 }
+
+/*DEBUT ANIMATIONS WIGGLE*/
+
+@keyframes wiggle
+{
+    /*0% { transform: rotate(0deg); }
+    10% { transform: rotate(0deg); }
+    15% { transform: rotate(13deg); }
+    20% { transform: rotate(-13deg); }
+    25% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }*/
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+h2.wiggle:hover 
+{
+  display: inline-block;
+  animation: wiggle 0.5s infinite;
+}
+
+h2.wiggle 
+{
+  animation: none;
+}
+/*FIN ANIMATIONS WIGGLE*/
