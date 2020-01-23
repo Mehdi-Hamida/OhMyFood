@@ -34,10 +34,10 @@ h1
 #container
 {
     text-align: center;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
     width: 100%;
-    height: 3.1rem;
+    height: 2.8rem;
     background-image: url(img/menu4/titre_menu4.JPG);
     background-repeat: no-repeat;
     background-position: center;
@@ -53,32 +53,19 @@ h3
 }
 /*SOULIGNER 1ER TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
-.titres
-{
-    display: flex;
-}
-
-.trait1
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
 .cadre1
 {
     width: 56px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2rem;
+    margin-top: -1.9rem;
 }
 
 .titres:hover + .cadre1 .trait1
 {
-    animation: running;
-    border-bottom: 2px solid black;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #91ffaf;
     animation: soulignement1 2s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
@@ -95,32 +82,19 @@ h3
 }
 /*SOULIGNER 2EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
-.titres
-{
-    display: flex;
-}
-
-.trait2
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
 .cadre2
 {
     width: 116px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2rem;
+    margin-top: -1.9rem;
 }
 
 .titres:hover + .cadre2 .trait2
 {
-    animation: running;
-    border-bottom: 2px solid black;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #91ffaf;
     animation: soulignement2 2s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
@@ -137,32 +111,19 @@ h3
 }
 /*SOULIGNER 3EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
-.titres
-{
-    display: flex;
-}
-
-.trait3
-{
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
 .cadre3
 {
     width: 129px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -2rem;
+    margin-top: -1.9rem;
 }
 
 .titres:hover + .cadre3 .trait3
 {
-    animation: running;
-    border-bottom: 2px solid black;
+    margin-bottom: -2px;
+    border-bottom: 2px solid #91ffaf;
     animation: soulignement3 2s;
-    animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
@@ -197,31 +158,24 @@ flex: 1; partage le reste de la largeur disponible*/
     flex: 1;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    margin-top: /*0.4rem*//*0.5%*/;
+    color: transparent;
+    height: 0.1em;
 }
 /*FIN DES SEPARATEURS HR*/
 
 .titres::before
 {
     background: linear-gradient(to left, #91ffaf, #26631a);
-    color: transparent;
-    height: 0.1em;
 }
 
 .titres::after
 {
     background: linear-gradient(to right, #91ffaf, #26631a);
-    color: transparent;
-    height: 0.1em;
-}
-
-#titre1::before, #titre1::after, #titre2::before, #titre2::after
-{
-    margin-top: 0.5rem;
 }
 
 .box
 {
+    box-shadow: 0px 0px 6px lightgrey;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -232,7 +186,7 @@ flex: 1; partage le reste de la largeur disponible*/
 
 .box h3
 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-family: 'Caveat', cursive, sans-serif;
     font-weight: normal;
 }
@@ -240,25 +194,23 @@ flex: 1; partage le reste de la largeur disponible*/
 .box p
 {
     font-size: 73%;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0rem;
+}
+
+span
+{
+    display: flex;
+    justify-content: space-between;
 }
 
 .gauche
-{
-    float: left;
-    margin: 0;
+{   
     margin-left: 10%;
-    font-size: small;
 }
 
 .droite
 {
-    margin: 0;
-    margin-left: 90%;
-    text-align: end;
-    margin-right: 10%;
-    font-weight: bold;
-    font-size: small;  
+   margin-right: 10%;
 }
 
 #dernier
@@ -327,3 +279,21 @@ h2.wiggle
   animation: none;
 }
 /*FIN ANIMATIONS WIGGLE*/
+
+/*DEBUT MEDIA QUERIES*/
+
+/*DEBUT MOBILES*/
+@media screen and (max-width: 767px)
+{
+    .box
+    {
+        margin-bottom: 5rem;
+    }
+}
+/*FIN MOBILES*/
+
+/*DEBUT TABLETTES*/
+@media
+/*FIN TABLETTES*/
+
+/*FIN MEDIA QUERIES*/
