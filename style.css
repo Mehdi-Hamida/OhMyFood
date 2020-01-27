@@ -10,38 +10,17 @@ header
     position: fixed;
     width: 100%;
     background-color: #49B282;
-}
-
-img
-{
-    width: 10rem;
-    max-width: 15rem;
-}
-
-#logo
-{
     text-align: center;
-    margin-left: -5%;
-    margin-right: -5%;
-}
-/*DEBUT NAVBAR POUR LA 2EME VERSION DU SITE*/
-/*#navbar
-{
-    background-color: #e0e0e0;
-    height: 2.5rem;
-    position: relative;
 }
 
-i
+h1
 {
-    position: absolute;
-    top: 15%;
-    left: 0.3em;
-    color: darkgrey;
-    font-size: 170%;
-    min-width: 1%;
-}*/
-/*FIN NAVBAR POUR LA 2EME VERSION DU SITE*/
+    background: url(img/15718411148892_Logo-ohmyfood.png) no-repeat;
+    background-position: center;
+    background-size: 10rem;
+    text-indent: -3333px;
+}
+
 .box
 {
     margin-top: 9.2rem;
@@ -50,7 +29,7 @@ i
     /*justify-content: center
     NE MARCHE PLUS !!*/
     justify-content: space-around;
-    width: 34%;
+    width: 35%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -107,17 +86,16 @@ i
     font-size: medium;
 }
 
-h1
+h2
 {
     font-size: medium;
     font-weight: normal;
 }
 
-h2
+h3
 {
-    font-size: medium;
+    font-size: 1.3rem;
     font-weight: normal;
-    font-family: sans-serif;
 }
 
 #mentions
@@ -148,6 +126,7 @@ footer
     width: 105%;
     position: fixed;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     color: yellow;
     background-color: #49B282;
@@ -224,15 +203,17 @@ footer
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-h2.wiggle:hover 
+.wiggle:hover 
 {
   display: inline-block;
   animation: wiggle 0.5s infinite;
 }
 
-h2.wiggle 
+.wiggle 
 {
-  animation: none;
+    animation: none;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 /*FIN ANIMATIONS WIGGLE*/
 /*FIN PARTIE ANIMATIONS*/
@@ -243,9 +224,21 @@ h2.wiggle
 {
     .box
     {
-        width: 24%;
-        margin-top: 51.5vh;
+        width: 27%;
+        margin-top: 52vh;
         transform: translateY(-50%);
+    }
+    
+    h3
+    {
+        font-size: 1.1rem;  
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        margin-bottom: 3.5rem;
+        width: 12rem;
+        height: 15rem;
     }
 }
 
@@ -282,14 +275,11 @@ h2.wiggle
         margin-top: 1rem;
     }
     
-    h1
-    {
-        font-size: x-large;
-    }
-    
     h2
     {
-        font-size: large;
+    font-size: medium;
+    font-weight: normal;
+    font-family: sans-serif;
     }
 }
 
@@ -324,11 +314,6 @@ h2.wiggle
         width: 28rem;
         height: 4rem;
         margin-top: 1rem;
-    }
-    
-    h1
-    {
-        font-size: xx-large;
     }
 }
 
@@ -430,11 +415,6 @@ h2.wiggle
         margin-bottom: auto;
         width: 5rem;
         height: 1.4rem;
-    }
-    
-    h1
-    {
-        font-size: 0.8rem;
     }
     
     .wave
