@@ -26,8 +26,6 @@ h1
     margin-top: 9.2rem;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: center
-    NE MARCHE PLUS !!*/
     justify-content: space-around;
     width: 35%;
     margin-left: auto;
@@ -98,28 +96,26 @@ h3
     font-weight: normal;
 }
 
+
 #mentions
 {
+    margin-left: -5rem;
     margin-top: auto;
     margin-bottom: auto;
     font-family: sans-serif;
 }
-
-/*LE MARGIN-RIGHT CI-DESSOUS EST NECESSAIRE POUR CENTRER "CONTACT" ET "MENTIONS LEGALES"*/
 #contact
 {
-    margin-right: -10rem;
+    margin-right: -6.5rem;
     margin-top: auto;
     margin-bottom: auto;
     font-family: sans-serif;
 }
-
 a
 {
     text-decoration: none;
     color: yellow
 }
-
 footer
 {
     height: 3rem;
@@ -224,9 +220,9 @@ footer
 {
     .box
     {
-        width: 27%;
-        margin-top: 52vh;
-        transform: translateY(-50%);
+        margin: auto;
+        margin-top: 8rem;
+        width: 25%;
     }
     
     h3
@@ -318,7 +314,7 @@ footer
 }
 
 /*POUR MOBILES*/
-@media (min-width: 321px) and (min-width: 569px) and (max-width: 750px)
+@media (min-width: 300px) and (max-width: 750px)
 {
     .box
     {
@@ -354,7 +350,7 @@ footer
         font-size: 1rem;
     }
         
-    #mentions
+    /*#mentions
     {
         margin-right: 4rem;
     }
@@ -363,7 +359,7 @@ footer
     {
         margin-left: -3.5rem;
         margin-right: 4rem;
-    }
+    }*/
 }
 
 /*POUR IPHONE X*/
@@ -400,10 +396,11 @@ footer
 }
 
 /*POUR IPHONE SE*/
-@media (min-width: 320px) and (max-width: 320px) and (min-width: 568px) and (max-width: 568px)
+@media (min-width: 319px) and (max-width: 321px)
+{
     .box
     {
-        width: 90%;
+        width: 80%;
         /*margin-bottom: auto;
         margin-top: /*35%*//*8rem;*/
         margin-top: 54vh;
@@ -415,8 +412,8 @@ footer
         display: flex;
         /*margin-top: -0.5rem;*/
         margin-top: auto;
-        width: 5rem;
-        height: 1.5rem;
+        width: 7rem;
+        height: 6.5rem;
         padding: 2rem 0;
         box-shadow: 0px 0px 6px lightgrey;
         background-size: 100%;
@@ -443,14 +440,9 @@ footer
         font-size: 0.1rem;
     }
  
-    #mentions
+    footer
     {
-        margin-left: -3rem;
-    }
-    
-    #contact
-    {
-        margin-right: -4rem;
+        text-align: center;
     }
 }
 
