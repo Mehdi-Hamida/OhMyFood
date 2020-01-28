@@ -100,15 +100,15 @@ h3
 
 #mentions
 {
-    margin-left: -5rem;
     margin-top: auto;
     margin-bottom: auto;
     font-family: sans-serif;
 }
 
+/*LE MARGIN-RIGHT CI-DESSOUS EST NECESSAIRE POUR CENTRER "CONTACT" ET "MENTIONS LEGALES"*/
 #contact
 {
-    margin-right: -6.5rem;
+    margin-right: -10rem;
     margin-top: auto;
     margin-bottom: auto;
     font-family: sans-serif;
@@ -318,7 +318,7 @@ footer
 }
 
 /*POUR MOBILES*/
-@media (min-width: 300px) and (max-width: 750px)
+@media (min-width: 321px) and (min-width: 569px) and (max-width: 750px)
 {
     .box
     {
@@ -356,12 +356,13 @@ footer
         
     #mentions
     {
-        padding-left: 4rem;
+        margin-right: 4rem;
     }
     
     #contact
     {
-        padding-right: 4.3rem;
+        margin-left: -3.5rem;
+        margin-right: 4rem;
     }
 }
 
@@ -399,11 +400,10 @@ footer
 }
 
 /*POUR IPHONE SE*/
-@media all and (max-device-width: 349px)
-{
+@media (min-width: 320px) and (max-width: 320px) and (min-width: 568px) and (max-width: 568px)
     .box
     {
-        width: 80%;
+        width: 90%;
         /*margin-bottom: auto;
         margin-top: /*35%*//*8rem;*/
         margin-top: 54vh;
@@ -415,8 +415,8 @@ footer
         display: flex;
         /*margin-top: -0.5rem;*/
         margin-top: auto;
-        width: 7rem;
-        height: 6.5rem;
+        width: 5rem;
+        height: 1.5rem;
         padding: 2rem 0;
         box-shadow: 0px 0px 6px lightgrey;
         background-size: 100%;
@@ -442,15 +442,15 @@ footer
     {
         font-size: 0.1rem;
     }
-    
-        #mentions
+ 
+    #mentions
     {
-        padding-left: 4rem;
+        margin-left: -3rem;
     }
     
     #contact
     {
-        padding-right: 4.5rem;
+        margin-right: -4rem;
     }
 }
 

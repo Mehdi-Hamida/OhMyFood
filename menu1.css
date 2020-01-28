@@ -264,6 +264,16 @@ footer
     bottom: 0;
 }
 
+    #mentions
+    {
+        padding-left: 4rem;
+    }
+    
+    #contact
+    {
+        padding-right: 4.3rem;
+    }
+
 /*DEBUT ANIMATIONS WIGGLE*/
 
 @keyframes wiggle
@@ -432,7 +442,7 @@ h4.wiggle
 {
     h2
     {
-        margin-top: 4rem;
+        margin-top: 4.5rem;
         margin-bottom: 0.3rem;
         font-size: small;
     }
@@ -441,7 +451,7 @@ h4.wiggle
     {
         width: 6rem;
         margin-top: -0.4rem;
-        margin-bottom: -0.5rem;
+        margin-bottom: -0.4rem;
     }
     
     .box
@@ -475,6 +485,7 @@ h4.wiggle
     {
         margin-top: 1rem;
         width: 6rem;
+        margin-bottom: 0rem;
     }
 }
 
