@@ -444,7 +444,7 @@ footer
 }
 
 /*POUR TOUS LES MOBILES SAUF IPHONE X - MODE PAYSAGE*/
-@media (orientation: landscape)
+/*@media (orientation: landscape)
 {
     body
     {
@@ -475,5 +475,5 @@ footer
         /*margin-bottom: 2rem;*/
     }
 }
-
+*/
 /*FIN MEDIA QUERY*/
