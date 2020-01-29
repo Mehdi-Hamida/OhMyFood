@@ -18,7 +18,7 @@ h1
     background: url(img/15718411148892_Logo-ohmyfood.png) no-repeat;
     background-position: center;
     background-size: 10rem;
-    text-indent: -3333px;
+    text-indent: -9999px;
 }
 
 .box
@@ -69,7 +69,6 @@ h1
 
 #bouton
 {
-    /*position: static;*/
     align-items: center;
     background-color: #49B282;
     color: yellow;
@@ -96,21 +95,19 @@ h3
     font-weight: normal;
 }
 
-
 #mentions
 {
-    margin-left: -5rem;
-    margin-top: auto;
-    margin-bottom: auto;
     font-family: sans-serif;
+    margin-right: auto;
+    margin-left: 1rem;
 }
+
 #contact
 {
-    margin-right: -6.5rem;
-    margin-top: auto;
-    margin-bottom: auto;
     font-family: sans-serif;
+    margin-left: auto;
 }
+
 a
 {
     text-decoration: none;
@@ -144,8 +141,6 @@ footer
 
 #bouton .wave span
 {
-    /*width: 0.4rem;
-    height: 0.4rem;*/
     border-radius: 50%;
     display: inline-block;
     animation-name: jumpingDots;
@@ -180,12 +175,6 @@ footer
 
 @keyframes wiggle
 {
-    /*0% { transform: rotate(0deg); }
-    10% { transform: rotate(0deg); }
-    15% { transform: rotate(13deg); }
-    20% { transform: rotate(-13deg); }
-    25% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }*/
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -236,6 +225,11 @@ footer
         width: 12rem;
         height: 15rem;
     }
+    
+    #mentions
+    {
+        margin-left: 3rem;
+    }   
 }
 
 /*POUR TABLETTES*/
@@ -276,6 +270,11 @@ footer
     font-size: medium;
     font-weight: normal;
     font-family: sans-serif;
+    }
+    
+    #mentions
+    {
+        margin-left: 2rem;
     }
 }
 
@@ -349,17 +348,6 @@ footer
     {
         font-size: 1rem;
     }
-        
-    /*#mentions
-    {
-        margin-right: 4rem;
-    }
-    
-    #contact
-    {
-        margin-left: -3.5rem;
-        margin-right: 4rem;
-    }*/
 }
 
 /*POUR IPHONE X*/
@@ -454,4 +442,29 @@ footer
         font-size: 1.5rem;
     }
 }
+
+/*POUR MODE PAYSAGE*/
+@media (orientation: landscape)
+{
+    .box
+    {
+        width: 100%;
+        margin-top: 80vh;
+        transform: translateY(-24%);
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        height: 6rem;
+        /*margin-top: auto;
+        margin-bottom: auto;*/
+    }
+    
+    #bouton
+    {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
 /*FIN MEDIA QUERY*/
