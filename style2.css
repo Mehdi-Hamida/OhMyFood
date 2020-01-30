@@ -1,0 +1,751 @@
+body
+{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+}
+
+header
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #519c79;
+    text-align: center;
+}
+
+h1
+{
+    background: url(img/15718411148892_Logo-ohmyfood.png) no-repeat;
+    background-position: center;
+    background-size: 10rem;
+    text-indent: -9999px;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    height: 105%;
+}
+
+.box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menus
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#menu1, #menu2, #menu3, #menu4
+{
+    width: 10rem;
+    height: 11rem;
+    padding: 2rem 0;
+    box-shadow: 0px 0px 6px lightgrey;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 1.7rem;
+}
+
+#menu1
+{
+    background-image: url(img/menu1.png);
+}
+
+#menu2
+{
+    background-image: url(img/menu2.png);
+}
+
+#menu3
+{
+    background-image: url(img/menu3.png);
+}
+
+#menu4
+{
+    background-image: url(img/menu4.png);
+}
+
+.box #bouton
+{
+    border-radius: 7px;
+}
+
+#bouton
+{
+    align-items: center;
+    background-color: #519c79;
+    color: #ffd145;
+    display: flex;
+    justify-content: center;
+    width: 13rem;
+    min-width: 10rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+h2
+{
+    font-size: medium;
+    font-weight: normal;
+}
+
+h3
+{
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+#mentions
+{
+    font-family: sans-serif;
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+#contact
+{
+    font-family: sans-serif;
+    margin-left: auto;
+}
+
+a
+{
+    text-decoration: none;
+    color: #edd640;
+}
+
+footer
+{
+    height: 3rem;
+    width: 105%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffd145;
+    background-color: #519c79;
+    margin-left: -5%;
+    margin-right: -5%;
+    bottom: 0;
+}
+
+/* /!\ DEBUT PARTIE ANIMATIONS /!\ */
+/*ANIMATION ZOOM MENU + OPACITE REDUITE*/
+:hover#menu1, :hover#menu2, :hover#menu3, :hover#menu4
+{
+    background-size: 130%;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+/*FIN ANIMATION DES MENUS*/
+/*DEBUT ANIMATION DES 3 PETITS POINTS*/
+
+#bouton .wave span
+{
+    display: inline-block;
+    animation-name: jumpingDots;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: x-large;
+    margin: -8%;
+}
+
+.wave span:nth-child(2)
+{
+    animation-delay: 0.7s;
+}
+
+.wave span:nth-child(3)
+{
+    animation-delay: 1.4s;
+}
+
+@keyframes jumpingDots
+{
+    0%{transform: translateY(-10%);}
+    40%{transform: translateY(-10%);}
+    50%{transform: translateY(-20%);}
+    100%{transform: translateY(-10%);}
+    
+}
+
+/*FIN ANIMATION DES 3 PETITS POINTS*/
+/*DEBUT ANIMATIONS WIGGLE*/
+
+@keyframes wiggle
+{
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.wiggle:hover 
+{
+  display: inline-block;
+  animation: wiggle 0.5s infinite;
+}
+
+.wiggle 
+{
+    animation: none;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+/*FIN ANIMATIONS WIGGLE*/
+/*FIN PARTIE ANIMATIONS*/
+
+/*DEBUT MEDIA QUERIES*/
+/*PC*/
+@media (max-width: 1600px)
+{
+    .box
+    {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1280px)
+{
+    .box
+    {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1067px)
+{
+    .box
+    {
+        width: 35%;
+    }
+}
+
+/*IPAD PRO*/
+@media (max-width: 1024px)
+{
+    header
+    {
+        height: 8.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 3%;
+        background-size: 20rem;
+        height: 5rem;
+    }
+    
+    .box
+    {
+        width: 75%;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+    width: 20rem;
+    height: 25rem;
+    margin-bottom: 3.5rem;
+    }
+
+    #bouton
+    {
+        width: 25rem;
+        height: 4rem;
+        margin-top: -1.5rem;
+    }
+    
+    h3
+    {
+        font-size: xx-large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: xx-large;
+    }
+    
+    footer
+    {
+        height: 5rem;
+    }
+}
+
+/*IPAD/IPAD MINI*/
+@media (max-width: 768px)
+{
+    header
+    {
+        height: 6.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 3.5%;
+        background-size: 15rem;
+        height: 3.5rem;
+    }
+    
+    .box
+    {
+        width: 75%;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+    width: 15rem;
+    height: 17rem;
+    }
+
+    #bouton
+    {
+        width: 20rem;
+        height: 3.5rem;
+    }
+    
+    h3
+    {
+        font-size: x-large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: x-large;
+    }
+    
+    footer
+    {
+        height: 3.5rem;
+    }
+}
+
+/*IPAD PRO - MODE PAYSAGE*/
+@media (orientation: landscape) and (max-width: 1366px)
+{
+    header
+    {
+        height: 7.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 2.5%;
+        background-size: 15rem;
+        height: 3.5rem;
+    }
+    
+    .box
+    {
+        width: 100%;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 18rem;
+        height: 21rem;
+        margin-right: 2.5rem;
+    }
+
+    #menu1
+    {
+        margin-left: 2.5rem;
+    }
+    
+    #bouton
+    {
+        width: 20rem;
+        height: 3.5rem;
+        margin-top: 5rem;
+    }
+    
+    h3
+    {
+        font-size: x-large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: x-large;
+    }
+    
+    footer
+    {
+        height: 4.5rem;
+    }
+}
+
+/*IPAD/MINI - MODE PAYSAGE*/
+@media (orientation: landscape) and (max-width: 1024px)
+{
+    header
+    {
+        height: 6.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 2.5%;
+        background-size: 15rem;
+        height: 3.5rem;
+    }
+    
+    .box
+    {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 12rem;
+        height: 14rem;
+        margin-right: 2rem;
+    }
+
+    #menu1
+    {
+        margin-left: 2rem;
+    }
+    
+    #bouton
+    {
+        width: 16rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+    }
+    
+    h3
+    {
+        font-size: large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: large;
+    }
+    
+    footer
+    {
+        height: 3.5rem;
+    }
+}
+
+
+/*IPHONE X*/
+@media (max-width: 767px) and (min-height: 812px)
+{
+    .box
+    {
+        width: 100%;
+    }
+    
+    header
+    {
+        height: 4.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 3.5%;
+        background-size: 10rem;
+        height: 3rem;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 10rem;
+        height: 11rem;
+    }
+
+    #bouton
+    {
+        width: 12rem;
+        height: 2rem;
+    }
+    
+    h3
+    {
+        font-size: large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: large;
+    }
+    
+    footer
+    {
+        height: 2.5rem;
+    }
+}
+
+/*IPHONES 6/7/8/+*/
+@media (max-width: 414px)
+{
+    .box
+    {
+        width: 90%;
+    }
+    
+    header
+    {
+        height: 4.5rem;
+    }
+    
+    h1
+    {
+        margin-top: 3.5%;
+        background-size: 10rem;
+        height: 3rem;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 9rem;
+        height: 10rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #bouton
+    {
+        width: 12rem;
+        height: 2rem;
+        margin-top: -0.3rem;
+    }
+    
+    h3
+    {
+        font-size: large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: large;
+    }
+    
+    footer
+    {
+        height: 2.5rem;
+    }
+}
+
+/*GALAXYS S/NOTE 3, S5, ETC...*/
+@media (max-width: 360px)
+{
+    .box
+    {
+        width: 95%;
+    }
+    
+    header
+    {
+        height: 4rem;
+    }
+    
+    h1
+    {
+        margin-top: 2.5%;
+        background-size: 10rem;
+        height: 3rem;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    #bouton
+    {
+        width: 12rem;
+        height: 2rem;
+    }
+    
+    h3
+    {
+        font-size: large;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: medium;
+    }
+    
+    footer
+    {
+        height: 2rem;
+    }
+}
+
+/*IPHONES 5/SE*/
+@media (max-width: 320px)
+{
+    .box
+    {
+        width: 95%;
+    }
+
+    #menu1, #menu2, #menu3, #menu4
+    {
+        width: 8rem;
+        height: 7rem;
+    }
+
+    #bouton
+    {
+        width: 11rem;
+        height: 2rem;
+    }
+    
+    h3
+    {
+        font-size: medium;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: small;
+    }
+}
+    
+    
+/*POUR TOUS LES MOBILES SAUF IPHONES 5/SE - MODE PAYSAGE*/
+@media (orientation: landscape) and (max-width: 736px)
+{
+    header
+    {
+        z-index: 1;
+        height: 4rem;
+    }
+    
+    h1
+    {
+        margin-top: 0.5%;
+        background-size: 10rem;
+    }
+    
+    .box
+    {
+        width: 100%;
+        height: 50%;
+        flex-wrap: wrap;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        height: 7rem;
+        width: 8rem;
+        margin-right: 1.5rem;
+        margin-top: -0.5rem;
+    }
+    
+    #menu1
+    {
+        margin-left: 1.5rem;
+    }
+    
+    #bouton
+    {
+        height: 2rem;
+        width: 5rem;
+        margin-top: -2.2rem;
+    }
+    
+    h3
+    {
+        font-size: medium;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: medium;
+    }
+    
+    footer
+    {
+        height: 2rem;
+    }
+}
+
+/*IPHONE 5/SE - MODE PAYSAGE*/
+@media (orientation: landscape) and (max-height: 320px)
+{   
+    header
+    {
+        z-index: 1;
+        height: 3rem;
+    }
+    
+    h1
+    {
+        margin-top: -0.5%;
+        background-size: 10rem;
+    }
+    
+    .box
+    {
+        width: 100%;
+        height: 50%;
+        flex-wrap: wrap;
+    }
+    
+    #menu1, #menu2, #menu3, #menu4
+    {
+        height: 6rem;
+        width: 7rem;
+        margin-right: 1.5rem;
+        margin-top: -1.5rem;
+    }
+    
+    #menu1
+    {
+        margin-left: 1.5rem;
+    }
+    
+    #bouton
+    {
+        height: 1.5rem;
+        width: 5rem;
+        margin-top: -2.2rem;
+    }
+    
+    h3
+    {
+        font-size: small;
+    }
+    
+    #mentions, #contact
+    {
+        font-size: small;
+    }
+    
+    footer
+    {
+        height: 1.5rem;
+    }
+}
