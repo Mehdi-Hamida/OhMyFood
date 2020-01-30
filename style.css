@@ -226,7 +226,7 @@ footer
 {
     .box
     {
-        width: 5%;
+        width: 10%;
     }
 }
 
@@ -242,7 +242,7 @@ footer
 {
     .box
     {
-        width: 15%;
+        width: 10%;
     }
 }
 
@@ -250,7 +250,7 @@ footer
 {
     .box
     {
-        width: 20%;
+        width: 15%;
     }
 }
 
@@ -279,7 +279,7 @@ footer
 }
 
 /*IPAD PRO*/
-@media (max-width: 1024px)
+@media (max-width: 1024px) and (min-height: 1366px)
 {
     header
     {
@@ -329,7 +329,7 @@ footer
 }
 
 /*IPAD/IPAD MINI*/
-@media (max-width: 768px)
+@media (max-width: 768px) and (min-height: 1024px)
 {
     header
     {
@@ -377,7 +377,7 @@ footer
 }
 
 /*IPAD PRO - MODE PAYSAGE*/
-@media (orientation: landscape) and (max-width: 1366px)
+@media (orientation: landscape) and (max-width: 1366px) and (min-height: 1024px)
 {
     header
     {
@@ -487,8 +487,7 @@ footer
     }
 }
 
-
-/*IPHONE X*/
+/*IPHONE X & XR*/
 @media (max-width: 767px) and (min-height: 812px)
 {
     .box
@@ -665,8 +664,8 @@ footer
     }
 }
     
-/*IPHONE X - MODE PAYSAGE*/
-@media (orientation: landscape) and (max-width: 812px)
+/*IPHONE X & XR- MODE PAYSAGE*/
+@media (orientation: landscape) and (max-width: 896px)
 {
     header
     {
