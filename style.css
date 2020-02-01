@@ -254,6 +254,14 @@ footer
     }
 }
 
+@media screen and (max-width: 1920px)
+{
+    .box
+    {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 1680px)
 {
     .box
@@ -664,7 +672,7 @@ footer
     }
 }
     
-/*IPHONE X & XR- MODE PAYSAGE*/
+/*IPHONE X & XR/MAX- MODE PAYSAGE*/
 @media (orientation: landscape) and (max-width: 896px)
 {
     header
@@ -681,7 +689,7 @@ footer
     
     .box
     {
-        width: 95%;
+        width: 85%;
         height: 50%;
         flex-wrap: wrap;
     }
@@ -703,7 +711,7 @@ footer
     {
         height: 2rem;
         width: 5rem;
-        margin-top: -2.2rem;
+        margin-top: 0rem;
     }
     
     h3
@@ -761,7 +769,7 @@ footer
     {
         height: 2rem;
         width: 5rem;
-        margin-top: -2.2rem;
+        /*margin-top: -2.2rem;*/
     }
     
     h3
