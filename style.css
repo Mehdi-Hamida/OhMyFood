@@ -226,7 +226,7 @@ footer
 {
     .box
     {
-        width: 10%;
+        width: 7.5%;
     }
 }
 
@@ -254,7 +254,7 @@ footer
     }
 }
 
-@media screen and (max-width: 1600px)
+@media screen and (max-width: 1680px)
 {
     .box
     {
