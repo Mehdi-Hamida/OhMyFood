@@ -190,6 +190,7 @@ flex: 1; partage le reste de la largeur disponible*/
     padding-bottom: 2.5%;
     padding-top: 2.5%;
     font-family: 'Caveat', cursive, sans-serif;
+    margin-bottom: 5rem;
 }
 
 .box h3
@@ -291,17 +292,16 @@ h4.wiggle
 /*DEBUT MEDIA QUERIES*/
 
 /*DEBUT MOBILES*/
-@media screen and (max-width: 767px)
+/*@media screen and (max-width: 767px)
 {
     .box
     {
         margin-bottom: 5rem;
     }
-}
+}*/
 /*FIN MOBILES*/
 
 /*DEBUT TABLETTES*/
-@media
 /*FIN TABLETTES*/
 
 /*FIN MEDIA QUERIES*/

@@ -195,6 +195,7 @@ flex: 1; partage le reste de la largeur disponible*/
     padding-top: 2.5%;
     font-family: 'Caveat', cursive, sans-serif;
     font-weight: normal;
+    margin-bottom: 5rem;
 }
 
 .box h3
@@ -262,12 +263,6 @@ footer
 
 @keyframes wiggle
 {
-    /*0% { transform: rotate(0deg); }
-    10% { transform: rotate(0deg); }
-    15% { transform: rotate(13deg); }
-    20% { transform: rotate(-13deg); }
-    25% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }*/
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -296,13 +291,13 @@ h4.wiggle
 /*DEBUT MEDIA QUERIES*/
 
 /*DEBUT MOBILES*/
-@media screen and (max-width: 767px)
+/*@media screen and (max-width: 767px)
 {
     .box
     {
         margin-bottom: 5rem;
     }
-}
+}*/
 /*FIN MOBILES*/
 
 /*DEBUT TABLETTES*/

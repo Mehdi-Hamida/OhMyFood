@@ -202,6 +202,7 @@ flex: 1; partage le reste de la largeur disponible*/
     margin-right: auto;
     padding-bottom: 4%;
     font-family: "georgia", "Arial", "apple chancery", "trebuchet ms";
+    margin-bottom: 5rem;
 }
 
 .box h3
@@ -295,6 +296,25 @@ h4.wiggle
 /*FIN ANIMATIONS WIGGLE*/
 
 /*DEBUT MEDIA QUERIES*/
+
+/*@media all and (max-width: 1280px)
+{
+    #image
+    {
+        margin-top: 1rem;
+    }
+    
+    #titre1
+    {
+        margin-top: 1rem;
+    }
+    
+    .box h3
+    {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+}*/
 
 /*DEBUT MOBILES*/
 
