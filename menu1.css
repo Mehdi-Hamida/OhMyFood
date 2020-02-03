@@ -241,7 +241,7 @@ span
 a
 {
     text-decoration: none;
-    color: yellow
+    color: #ffd145;
 }
 
 h4
@@ -249,6 +249,7 @@ h4
     font-size: medium;
     font-weight: normal;
     font-family: sans-serif;
+    margin-top: 1rem;
 }
 
 footer
@@ -264,16 +265,6 @@ footer
     margin-right: -5%;
     bottom: 0;
 }
-
-    #mentions
-    {
-        padding-left: 4rem;
-    }
-    
-    #contact
-    {
-        padding-right: 4.3rem;
-    }
 
 /*DEBUT ANIMATIONS WIGGLE*/
 
