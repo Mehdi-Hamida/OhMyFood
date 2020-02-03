@@ -91,11 +91,6 @@ h3
     100% {width: 3rem;}
 }
 
-@-webkit-keyframes soulignement1
-{
-    0% {width: 0rem;}
-    100% {width: 3rem;}
-}
 /*SOULIGNER 2EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
 .cadre2
@@ -120,11 +115,6 @@ h3
     100% {width: 5.7rem;}
 }
 
-@-webkit-keyframes soulignement2
-{
-    0% {width: 1rem;}
-    100% {width: 5.7rem;}
-}
 /*SOULIGNER 3EME TITRE*/
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
 .cadre3
@@ -144,12 +134,6 @@ h3
 }
 
 @keyframes soulignement3
-{
-    0% {width: 0rem;}
-    100% {width: 7rem;}
-}
-
-@-webkit-keyframes soulignement3
 {
     0% {width: 0rem;}
     100% {width: 7rem;}
