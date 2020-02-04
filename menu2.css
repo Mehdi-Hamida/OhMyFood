@@ -178,17 +178,17 @@ flex: 1; partage le reste de la largeur disponible*/
     margin-top: 0.17rem;
 }
 
-.entree, #titre1
+#titre1
 {
     color: #ba7a02;
 }
 
-.plat, #titre2
+#titre2
 {
     color: #b866fa;
 }
 
-.dessert, #titre3
+#titre3
 {
     color: #6a54b3;
 }
@@ -200,7 +200,7 @@ flex: 1; partage le reste de la largeur disponible*/
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     font-family: "georgia", "Arial", "apple chancery", "trebuchet ms";
     margin-bottom: 5rem;
 }
@@ -211,16 +211,21 @@ flex: 1; partage le reste de la largeur disponible*/
     margin-top: 2rem;
 }
 
-.box p
-{
-    margin-bottom: 0.3rem;
-    font-size: 70%;
-}
-
-.entree span, .plat span, .dessert span
+.entree, .plat, .dessert
 {
     display: flex;
     justify-content: space-between;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 70%;
+}
+
+li
+{
+    margin-bottom: 0.3rem;
 }
 
 .gauche

@@ -205,16 +205,21 @@ flex: 1; partage le reste de la largeur disponible*/
     font-weight: normal;
 }
 
-.box p
-{
-    font-size: 105%;
-    margin-bottom: -0.6rem;
-}
-
-span
+.entree, .plat, .dessert
 {
     display: flex;
     justify-content: space-between;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 105%;
+}
+
+li
+{
+    margin-bottom: 0.3rem;
 }
 
 .gauche
@@ -226,7 +231,6 @@ span
 {
    margin-right: 10%;
 }
-
 #dernier
 {
     margin-bottom: 3.3rem;

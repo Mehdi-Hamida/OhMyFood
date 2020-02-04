@@ -100,23 +100,19 @@ main
     font-size: medium;
 }
 
-h2
-{
-    font-size: medium;
-    font-weight: normal;
-}
-
 h3
 {
     font-size: 1.3rem;
     font-weight: normal;
 }
 
-#mentions
+h2
 {
     font-family: sans-serif;
     margin-right: auto;
     margin-left: 1rem;
+    font-size: medium;
+    font-weight: normal;
 }
 
 #contact
@@ -325,7 +321,7 @@ footer
         font-size: xx-large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: xx-large;
     }
@@ -373,7 +369,7 @@ footer
         font-size: x-large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: x-large;
     }
@@ -428,7 +424,7 @@ footer
         font-size: x-large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: x-large;
     }
@@ -484,7 +480,7 @@ footer
         font-size: large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: large;
     }
@@ -532,7 +528,7 @@ footer
         font-size: large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: large;
     }
@@ -582,7 +578,7 @@ footer
         font-size: large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: large;
     }
@@ -630,7 +626,7 @@ footer
         font-size: large;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: medium;
     }
@@ -666,7 +662,7 @@ footer
         font-size: medium;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: small;
     }
@@ -719,7 +715,7 @@ footer
         font-size: medium;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: medium;
     }
@@ -776,7 +772,7 @@ footer
         font-size: medium;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: medium;
     }
@@ -834,7 +830,7 @@ footer
         font-size: small;
     }
     
-    #mentions, #contact
+    h2, #contact
     {
         font-size: small;
     }

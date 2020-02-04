@@ -3,14 +3,14 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>La Note Enchantée - OhMyFood!</title>
-    <meta name="author" content="Mehdi HAMIDA"/>
-    <meta name="description" content="OhMyFood! Livraison sur Paris de menus prestigieux!"/>
-    <meta name="viewport" content="width=device-width, initial scale=1, user-scalable=no"/>
-    <link href="menu1.css" rel="stylesheet"/>
+    <meta name="author" content="Mehdi HAMIDA" />
+    <meta name="description" content="OhMyFood! Livraison sur Paris de menus prestigieux!" />
+    <meta name="viewport" content="width=device-width, initial scale=1, user-scalable=no" />
+    <link href="menu1.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/76ae4eab8d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
     <title>OhMyFood</title>
 </head>
 
@@ -31,8 +31,6 @@
             <div id="container">
                 <img src="img/menu1/titre_menu1.JPG" alt="titre" title="titre menu1" id="image" />
             </div>
-            <!--<p id="fontawesome"><i class="fas fa-music"></i></p>
-            <h2>La note enchantée</h2>-->
             <!--FIN PRESENTATION DU RESTAURANT-->
             <!--DEBUT TITRE ENTREE-->
             <h3 class="titres" id="titre1">Prélude
@@ -43,22 +41,20 @@
             </div>
             <!--FIN TITRE ENTREE-->
             <!--DEBUT LISTE ENTREE-->
-            <span>
-                <p class="gauche">Ravioles de foie gras accompagnés de leur crème à la truffe</p>
-                <p class="droite">98€</p>
-            </span>
-            <span>
-                <p class="gauche">Caviar osciètre sur blini à la farine de blé noir</p>
-                <p class="droite">115€</p>
-            </span>
-            <span>
-                <p class="gauche">Homard et espuma de potiron mariné aux zests d'orange</p>
-                <p class="droite">89€</p>
-            </span>
-            <span>
-                <p class="gauche">Foie gras de canard cuit entier, confiture de figue et pain toasté</p>
-                <p class="droite">105€</p>
-            </span>
+            <div class="entree">
+                <ul class="gauche">
+                    <li>Ravioles de foie gras accompagnés de leur crème à la truffe</li>
+                    <li>Caviar osciètre sur blini à la farine de blé noir</li>
+                    <li>Homard et espuma de potiron mariné aux zests d'orange</li>
+                    <li>Foie gras de canard cuit entier, confiture de figue et pain toasté</li>
+                </ul>
+                <ul class="droite">
+                    <li>98€</li>
+                    <li>115€</li>
+                    <li>89€</li>
+                    <li>105€</li>
+                </ul>
+            </div>
             <!--FIN LISTE ENTREE-->
             <!--DEBUT TITRE PLAT-->
             <h3 class="titres">Point d'orgue
@@ -69,18 +65,19 @@
             </div>
             <!--FIN TITRE PLAT-->
             <!--DEBUT LISTE PLAT-->
-            <span>
-                <p class="gauche">Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</p>
-                <p class="droite">102€</p>
-            </span>
-            <span>
-                <p class="gauche">Langoustine poêlée, purée de patate douce</p>
-                <p class="droite">205€</p>
-            </span>
-            <span>
-                <p class="gauche">Mijoté de queue de boeuf et riz sauvage aux zests de citron</p>
-                <p class="droite">105€</p>
-            </span>
+            <div class="plat">
+                <ul class="gauche">
+                    <li>Noix de coquilles Saint-Jacques sur lit de purée de céleri-rave</li>
+                    <li>Langoustine poêlée, purée de patate douce</li>
+                    <li>Mijoté de queue de boeuf et riz sauvage aux zests de citron</li>
+
+                </ul>
+                <ul class="droite">
+                    <li>102€</li>
+                    <li>205€</li>
+                    <li>169€</li>
+                </ul>
+            </div>
             <!--FIN LISTE PLAT-->
             <!--DEBUT TITRE DESSERT-->
             <h3 class="titres">Mouvement final
@@ -90,21 +87,14 @@
                 </div>
             </div>
             <!--FIN TITRE DESSERT-->
-            <!--CI-DESSOUS LES PARAGRAPHES DE LA CLASSE "DROITE" ONT ETE VOLONTAIREMENT LAISSES POUR RESOUDRE UN PROBLEME D'AFFICHAGE QUI EMPECHAIT LES INTITULES DE MENUS DE SE METTRE A LA LIGNE ET EMPECHAIT LE FOND COLORE DE LA DIV "BOX" DE S'AFFICHER DERRIERE LES INTITULES-->
             <!--DEBUT LISTE DESSERT-->
-            <span>
-                <p class="gauche">Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</p>
-                <p class="droite2">&nbsp;</p>
-            </span>
-            <span>
-                <p class="gauche">Baba au rhum revisité avec son coulis de citron</p>
-                <p class="droite2">&nbsp;</p>
-            </span>
-            <span>
-                <p class="gauche">Tarte au citron meringuée destructurée</p>
-                <p class="droite2">&nbsp;</p>
-                <!--<p id="fontawesome2"><i class="fas fa-music"></i>&nbsp;La note enchantée</p>-->
-            </span>
+            <div class="dessert">
+                <ul class="gauche">
+                    <li>Macaron noisette et chocolat, glace au caramel brun et sel de Guérande</li>
+                    <li>Baba au rhum revisité avec son coulis de citron</li>
+                    <li>Tarte au citron meringuée destructurée</li>
+                </ul>
+            </div>
             <!--FIN LISTE DESSERT-->
             <div id="container">
                 <img src="img/menu1/titre2_menu1.JPG" alt="titre" title="titre menu #1" id="image2" />
@@ -125,6 +115,4 @@
         </h4>
     </footer>
     <!--FIN FOOTER-->
-</body>
-
-</html>
+</body></html>

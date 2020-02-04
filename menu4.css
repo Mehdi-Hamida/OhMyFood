@@ -200,16 +200,21 @@ flex: 1; partage le reste de la largeur disponible*/
     font-weight: normal;
 }
 
-.box p
-{
-    font-size: 73%;
-    margin-bottom: 0rem;
-}
-
-span
+.entree, .plat, .dessert
 {
     display: flex;
     justify-content: space-between;
+}
+
+ul
+{
+    list-style: none;
+    font-size: 73%;
+}
+
+li
+{
+    margin-bottom: 0.3rem;
 }
 
 .gauche
