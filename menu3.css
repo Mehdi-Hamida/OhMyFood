@@ -219,18 +219,20 @@ ul
 
 li
 {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .gauche
 {   
-    margin-left: 10%;
+    margin-left: 2%;
 }
 
 .droite
 {
-   margin-right: 10%;
+    margin-right: 7%;
+    text-align: right;
 }
+
 #dernier
 {
     margin-bottom: 3.3rem;
@@ -259,7 +261,7 @@ footer
     justify-content: space-around;
     color: #ffd145;
     background-color: #519c79;
-    margin-left: -5%;
+    margin-left: -2%;
     margin-right: -5%;
     bottom: 0;
 }
@@ -293,20 +295,42 @@ h4.wiggle
 }
 /*FIN ANIMATIONS WIGGLE*/
 
-/*DEBUT MEDIA QUERIES*/
-
-/*DEBUT MOBILES*/
-/*@media screen and (max-width: 767px)
+@media (max-width: 541px)
 {
-    .box
-    {
-        margin-bottom: 5rem;
-    }
-}*/
-/*FIN MOBILES*/
+     .droite li
+     {
+        margin-bottom: 0.8rem;    
+     }
+}
 
-/*DEBUT TABLETTES*/
+@media (max-width: 520px)
+{
+     .droite li
+     {
+        margin-bottom: 1rem;    
+     }
+}
 
-/*FIN TABLETTES*/
+@media (max-width: 445px)
+{
+     .droite li
+     {
+        margin-bottom: 1.4rem;    
+     }
+}
 
-/*FIN MEDIA QUERIES*/
+@media (max-width: 366px)
+{
+     .droite li
+     {
+        margin-bottom: 1.7rem;    
+     }
+}
+
+@media (max-width: 336px)
+{
+     .droite li
+     {
+        margin-bottom: 2rem;    
+     }
+}

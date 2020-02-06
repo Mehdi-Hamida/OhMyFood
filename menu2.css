@@ -39,15 +39,6 @@ h2
     font-family: sans-serif;
 }
 
-/*h2
-{
-    text-align: center;
-    margin-bottom: 3.5rem;
-    background: linear-gradient(to left, #7626ff, #fc9b1c);
-    -webkit-background-clip: text;
-    color: transparent;
-}*/
-
 #image
 {
     width: 30rem;
@@ -64,7 +55,7 @@ h2
 h3
 {
     text-align: center;
-    font-size: 75%;
+    font-size: 90%;
     padding-bottom: 0.3rem;
 }
 
@@ -220,22 +211,23 @@ flex: 1; partage le reste de la largeur disponible*/
 ul
 {
     list-style: none;
-    font-size: 70%;
+    font-size: 75%;
 }
 
 li
 {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .gauche
 {   
-    margin-left: 10%;
+    margin-left: 2%;
 }
 
 .droite
 {
-   margin-right: 10%;
+    margin-right: 7%;
+    text-align: right;
 }
 
 a
@@ -261,7 +253,7 @@ footer
     justify-content: space-around;
     color: #ffd145;
     background-color: #519c79;
-    margin-left: -5%;
+    margin-left: -2%;
     margin-right: -5%;
     bottom: 0;
 }
@@ -301,33 +293,42 @@ h4.wiggle
 }
 /*FIN ANIMATIONS WIGGLE*/
 
-/*DEBUT MEDIA QUERIES*/
-
-/*@media all and (max-width: 1280px)
+@media (max-width: 541px)
 {
-    #image
-    {
-        margin-top: 1rem;
-    }
-    
-    #titre1
-    {
-        margin-top: 1rem;
-    }
-    
-    .box h3
-    {
-        margin-bottom: 0.5rem;
-        margin-top: 0.5rem;
-    }
-}*/
+     .droite li
+     {
+        margin-bottom: 0.8rem;    
+     }
+}
 
-/*DEBUT MOBILES*/
+@media (max-width: 520px)
+{
+     .droite li
+     {
+        margin-bottom: 1rem;    
+     }
+}
 
-/*FIN MOBILES*/
+@media (max-width: 445px)
+{
+     .droite li
+     {
+        margin-bottom: 1.4rem;    
+     }
+}
 
-/*DEBUT TABLETTES*/
+@media (max-width: 366px)
+{
+     .droite li
+     {
+        margin-bottom: 1.7rem;    
+     }
+}
 
-/*FIN TABLETTES*/
-
-/*FIN MEDIA QUERIES*/
+@media (max-width: 336px)
+{
+     .droite li
+     {
+        margin-bottom: 2rem;    
+     }
+}

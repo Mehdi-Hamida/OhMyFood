@@ -214,17 +214,18 @@ ul
 
 li
 {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .gauche
 {   
-    margin-left: 10%;
+    margin-left: 2%;
 }
 
 .droite
 {
-   margin-right: 10%;
+    margin-right: 7%;
+    text-align: right;
 }
 
 #dernier
@@ -255,7 +256,7 @@ footer
     justify-content: space-around;
     color: #ffd145;
     background-color: #519c79;
-    margin-left: -5%;
+    margin-left: -2%;
     margin-right: -5%;
     bottom: 0;
 }
@@ -264,12 +265,6 @@ footer
 
 @keyframes wiggle
 {
-    /*0% { transform: rotate(0deg); }
-    10% { transform: rotate(0deg); }
-    15% { transform: rotate(13deg); }
-    20% { transform: rotate(-13deg); }
-    25% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }*/
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -295,19 +290,42 @@ h4.wiggle
 }
 /*FIN ANIMATIONS WIGGLE*/
 
-/*DEBUT MEDIA QUERIES*/
-
-/*DEBUT MOBILES*/
-/*@media screen and (max-width: 767px)
+@media (max-width: 541px)
 {
-    .box
-    {
-        margin-bottom: 5rem;
-    }
-}*/
-/*FIN MOBILES*/
+     .droite li
+     {
+        margin-bottom: 0.8rem;    
+     }
+}
 
-/*DEBUT TABLETTES*/
-/*FIN TABLETTES*/
+@media (max-width: 520px)
+{
+     .droite li
+     {
+        margin-bottom: 1rem;    
+     }
+}
 
-/*FIN MEDIA QUERIES*/
+@media (max-width: 445px)
+{
+     .droite li
+     {
+        margin-bottom: 1.4rem;    
+     }
+}
+
+@media (max-width: 366px)
+{
+     .droite li
+     {
+        margin-bottom: 1.7rem;    
+     }
+}
+
+@media (max-width: 336px)
+{
+     .droite li
+     {
+        margin-bottom: 2rem;    
+     }
+}
