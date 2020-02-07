@@ -97,7 +97,6 @@ main
     height: 2rem;
     font-size: 1.2rem;
     font-family: sans-serif;
-    font-size: medium;
 }
 
 h3
@@ -109,9 +108,7 @@ h3
 h2
 {
     font-family: sans-serif;
-    margin-right: auto;
-    margin-left: 1rem;
-    font-size: medium;
+    margin-left: 5%;
     font-weight: normal;
 }
 
@@ -119,6 +116,7 @@ a
 {
     text-decoration: none;
     color: #edd640;
+    font-size: medium;
 }
 
 footer
@@ -133,6 +131,7 @@ footer
     background-color: #519c79;
     margin-left: -5%;
     margin-right: -5%;
+    font-size: 1rem;
     bottom: 0;
 }
 
