@@ -69,7 +69,7 @@ h3
 {
     margin-left: auto;
     margin-right: auto;
-    width: 155px;
+    width: 187px;
 }
 
 .titres:hover + .cadre1 .trait1
@@ -95,7 +95,7 @@ h3
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
 .cadre2
 {
-    width: 115px;
+    width: 140px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -123,7 +123,7 @@ h3
 /*LES TITRES DOIVENT ETRE "FLEX" POUR FAIRE APPARAITRE LES <HR> SUR LES COTES*/
 .cadre3
 {
-    width: 139px;
+    width: 170px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,7 +156,7 @@ h3
     text-align: center;
 }
 
-/* content: ""; est nécessaire pour afficher les pseudo-éléments.
+/* content: ""; est nécessaire pour afficher les titres.
 flex: 1; partage le reste de la largeur disponible*/
 .titres::before,
 .titres::after
@@ -259,15 +259,8 @@ footer
 }
 
 /*DEBUT ANIMATIONS WIGGLE*/
-
 @keyframes wiggle
 {
-    /*0% { transform: rotate(0deg); }
-    10% { transform: rotate(0deg); }
-    15% { transform: rotate(13deg); }
-    20% { transform: rotate(-13deg); }
-    25% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }*/
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -292,7 +285,7 @@ h4.wiggle
   animation: none;
 }
 /*FIN ANIMATIONS WIGGLE*/
-
+/*DEBUT MEDIA QUERIES*/
 @media (max-width: 541px)
 {
      .droite li
@@ -332,3 +325,4 @@ h4.wiggle
         margin-bottom: 2rem;    
      }
 }
+/*FIN MEDIA QUERIES*/

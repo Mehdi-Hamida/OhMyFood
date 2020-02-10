@@ -156,7 +156,7 @@ h3
     text-align: center;
 }
 
-/* content: ""; est nécessaire pour afficher les pseudo-éléments.
+/* content: ""; est nécessaire pour afficher les titres.
 flex: 1; partage le reste de la largeur disponible*/
 .titres::before,
 .titres::after
@@ -262,7 +262,6 @@ footer
 }
 
 /*DEBUT ANIMATIONS WIGGLE*/
-
 @keyframes wiggle
 {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -289,7 +288,7 @@ h4.wiggle
   animation: none;
 }
 /*FIN ANIMATIONS WIGGLE*/
-
+/*DEBUT MEDIA QUERIES*/
 @media (max-width: 541px)
 {
      .droite li
@@ -329,3 +328,4 @@ h4.wiggle
         margin-bottom: 2rem;    
      }
 }
+/*FIN MEDIA QUERIES*/
