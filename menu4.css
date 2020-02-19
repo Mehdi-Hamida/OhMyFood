@@ -44,12 +44,11 @@ h2
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 3.5rem;
-    width: 100%;
-    height: 2.8rem;
-    background-image: url(img/menu4/titre_menu4.JPG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 18rem;
+    font-size: 270%;
+    background: -webkit-gradient(linear, left top, right top, from(#26631a), to(#91ffaf));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive, 'Caveat', sans-serif;
 }
 
 h3
@@ -289,6 +288,14 @@ h4.wiggle
 }
 /*FIN ANIMATIONS WIGGLE*/
 /*DEBUT MEDIA QUERIES*/
+@media (min-width: 769px)
+{
+    .box
+    {
+        width: 30rem;
+    }
+}
+
 @media (max-width: 541px)
 {
      .droite li
